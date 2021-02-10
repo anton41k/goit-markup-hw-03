@@ -1,0 +1,86 @@
+/*test*/
+
+.test {
+  background-color: rgb(180, 223, 27);
+}
+
+.res-marg-pad {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-cont {
+  margin-left: auto;
+}
+
+.header-nav,
+.header-cont,
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 25px 0;
+  display: block;
+}
+
+.header-nav-static,
+.header-cont-static {
+  padding: 32px 0;
+  display: block;
+}
+
+.header-nav .item:first-child {
+  margin-right: 93px;
+}
+
+/*начиная с 2-ог елемента кроме последнего*/
+.header-nav .item:nth-child(1n + 2):not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-cont .item:first-child {
+  margin-right: 50px;
+}
+
+.main-hero {
+  background-color: var(--bgr-hero-footer);
+}
+
+.main-hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 696px;
+  margin: 0 auto;
+}
+
+.main-hero-bt {
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.main-accomplishments-ul {
+  display: flex;
+  margin: 94px 0;
+}
+
+.main-accomplishments-ul .item {
+  max-width: 270px;
+}
+
+.main-accomplishments-ul .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-accomplishments-ul .item p {
+  margin: 10px 0 0 0;
+  min-height: 75px;
+}

@@ -25,15 +25,6 @@ body {
   height: 1px;
   margin: -1px;
 }
-/*test*/
-.test{
-  background-color: brown;
-}
-
-.container{
-  outline: 1px solid blue;
-  margin: 0 200px;
-}
 
 /*Logo*/
 
@@ -44,8 +35,6 @@ body {
   line-height: 1.19;
   text-decoration: none;
   color: var(--blue-text);
-
-  
 }
 
 .header .logo-studio {
@@ -80,25 +69,8 @@ body {
   text-decoration: none;
 }
 
-.header-nav .header-hover.current{
-  color: var(--blue-text)
-}
-
-.hn{
-  margin: 25px auto 25px 15px;
-  padding:0;
-  display: inline-block;
-}
-
-.hover-cont{
-  margin: 32px 15px 32px auto;
-  padding:0;
-  display: inline-block;
-}
-
-.res-marg-pad{
-  margin: 0;
-  padding: 0;
+.header-nav .header-hover.current {
+  color: var(--blue-text);
 }
 
 /*Main*/
@@ -113,7 +85,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: var(--bgr-hero-footer);
   color: var(--white-text);
 }
 
@@ -136,7 +107,7 @@ body {
 
 .main-accomplishments p {
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.71;
   color: var(--gray-text);
 }
 
