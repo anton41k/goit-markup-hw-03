@@ -26,6 +26,17 @@ body {
   margin: -1px;
 }
 
+.res-marg-pad {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /*Logo*/
 
 .logo {
@@ -52,11 +63,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
+
+  padding: 32px 0;
+  display: block;
 }
 
 .header-cont-static {
   color: var(--gray-text);
-  text-decoration: none;
 }
 
 .header-hover:hover,
@@ -66,17 +80,46 @@ body {
 
 .header-nav-static {
   color: var(--black-text);
-  text-decoration: none;
 }
 
 .header-nav .header-hover.current {
   color: var(--blue-text);
 }
 
-/*Main*/
+.header-cont {
+  margin-left: auto;
+}
 
+.header-nav,
+.header-cont,
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  padding: 25px 0;
+  display: block;
+}
+
+.header-nav .item:first-child {
+  margin-right: 93px;
+}
+
+/*начиная с 2-ог елемента кроме последнего*/
+.header-nav .item:nth-child(1n + 2):not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-cont .item:first-child {
+  margin-right: 50px;
+}
+
+/*Main*/
+/*hero*/
 .main-hero {
   text-align: center;
+  background-color: var(--bgr-hero-footer);
 }
 
 .main-hero-tittle {
@@ -96,21 +139,53 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-text);
   background-color: var(--blue-text);
+
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
 }
 
-.main-accomplishments h3 {
+.main-hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 696px;
+  margin: 0 auto;
+}
+
+/*accomplishments*/
+.main-accomplishments .name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.main-accomplishments p {
+.main-accomplishments .item .description {
   font-size: 14px;
   line-height: 1.71;
   color: var(--gray-text);
+
+  margin: 10px 0 0 0;
 }
 
+.main-accomplishments {
+  margin-top: 94px;
+  min-height: 101px;
+}
+
+.main-accomplishments-ul {
+  display: flex;
+}
+
+.main-accomplishments-ul .item {
+  max-width: 270px;
+}
+
+.main-accomplishments-ul .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*employment*/
 .main-employment h2,
 .main-team h2 {
   font-weight: 700;
@@ -119,22 +194,64 @@ body {
   text-align: center;
 }
 
-.main-team {
-  background-color: var(--bgr-wgray);
+.main-employment {
+  margin-top: 94px;
 }
 
-.main-team h3,
-.main-team p {
+.main-employment-ul {
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-employment-ul .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*team*/
+.main-team {
+  background-color: var(--bgr-wgray);
+
+  margin-top: 94px;
+}
+
+.main-team-ul .name,
+.main-team-ul .specialty {
   font-size: 16px;
   line-height: 1.9;
 }
 
-.main-team h3 {
+.main-team-ul .name {
   font-weight: 500;
+
+  margin-top: 30px;
+  text-align: center;
 }
 
-.main-team p {
+.main-team-ul .specialty {
   color: var(--gray-text);
+
+  margin-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-team-ul {
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-team-ul .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-team .item {
+  background-color: var(--white-text);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*Footer*/
@@ -146,6 +263,8 @@ body {
 .footer-address a {
   font-size: 14px;
   line-height: 1.7;
+
+  display: block;
 }
 
 .footer-address-geo {
@@ -164,24 +283,67 @@ body {
   color: var(--white-text);
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+
+.footer-address a:not(:first-child) {
+  margin-top: 9px;
+}
+
 /*Портфолио*/
+.test {
+  background-color: aqua;
+}
+
+.test1 {
+  background-color: rgb(157, 230, 22);
+}
 
 .main {
   background-color: var(--white-text);
 }
 
-.main-portfolio-list button {
+.main-portfolio-list .bt {
+  font-family: 'Roboto', sans-serif;
   border: none;
   background-color: var(--bgr-wgray);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
-.main-portfolio-list button:hover,
-.main-portfolio-list button:focus {
+.main-portfolio-list .bt:hover,
+.main-portfolio-list .bt:focus {
   background-color: var(--blue-text);
   color: var(--white-text);
+}
+
+.main-portfolio-list {
+  display: flex;
+}
+
+.main-portfolio .container {
+  padding-top: 94px;
+}
+
+.container-list {
+  max-width: 612px;
+  margin: 0 auto;
+  padding-bottom: 22px;
+}
+
+.main-portfolio-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .main-portfolio-project a {
