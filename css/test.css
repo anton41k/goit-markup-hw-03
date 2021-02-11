@@ -4,6 +4,10 @@
   background-color: rgb(180, 223, 27);
 }
 
+.test1 {
+  background-color: rgb(65, 241, 88);
+}
+
 .res-marg-pad {
   margin: 0;
   padding: 0;
@@ -26,7 +30,7 @@
   align-items: center;
 }
 
-.logo {
+.header .logo {
   padding: 25px 0;
   display: block;
 }
@@ -67,9 +71,13 @@
   margin-top: 30px;
 }
 
+.main-accomplishments {
+  margin-top: 94px;
+  min-height: 101px;
+}
+
 .main-accomplishments-ul {
   display: flex;
-  margin: 94px 0;
 }
 
 .main-accomplishments-ul .item {
@@ -82,5 +90,67 @@
 
 .main-accomplishments-ul .item p {
   margin: 10px 0 0 0;
-  min-height: 75px;
+}
+
+.main-employment {
+  margin-top: 94px;
+}
+
+.main-employment-ul {
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-employment-ul .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-team {
+  margin-top: 94px;
+}
+
+.main-team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.main-team-ul {
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-team-ul .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-team-ul .name {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.main-team-ul .specialty {
+  margin-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-team .item {
+  background-color: var(--white-text);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.footer-address a {
+  display: block;
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+
+.footer-address a:not(:first-child) {
+  margin-top: 9px;
 }
