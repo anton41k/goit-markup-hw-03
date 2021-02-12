@@ -7,6 +7,8 @@
   --gray-op06-text: rgba(255, 255, 255, 0.6);
   --bgr-hero-footer: rgba(47, 48, 58, 1);
   --bgr-wgray: rgba(245, 244, 250, 1);
+  --gray-border:rgba(238, 238, 238, 1);
+  --gray-header-line:rgba(236, 236, 236, 1);;
 }
 
 body {
@@ -35,6 +37,10 @@ body {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.img{
+  display: block;/*убрать отступ картинки внизу */
 }
 
 /*Logo*/
@@ -113,6 +119,14 @@ body {
 
 .header-cont .item:first-child {
   margin-right: 50px;
+}
+
+/*линия внизу header*/
+/*.header {
+  border-bottom: 1px solid var(--gray-header-line); 
+}*/
+.line{
+  outline: 0.5px solid var(--gray-header-line);
 }
 
 /*Main*/
@@ -297,18 +311,12 @@ body {
 }
 
 /*Портфолио*/
-.test {
-  background-color: aqua;
-}
-
-.test1 {
-  background-color: rgb(157, 230, 22);
-}
 
 .main {
   background-color: var(--white-text);
 }
 
+/*portfolio button*/
 .main-portfolio-list .bt {
   font-family: 'Roboto', sans-serif;
   border: none;
@@ -346,11 +354,12 @@ body {
   margin-right: 8px;
 }
 
-.main-portfolio-project a {
+/*project*/
+.main-portfolio-project .link {
   text-decoration: none;
 }
 
-.main-portfolio-project h2 {
+.main-portfolio-project .name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -358,8 +367,41 @@ body {
   color: var(--black-text);
 }
 
-.main-portfolio-project p {
+.main-portfolio-project .project {
   font-size: 16px;
   line-height: 1.87;
   color: var(--gray-text);
+}
+
+.container-project{
+  margin-top: 34px;
+  padding-bottom: 84px;
+}
+
+.main-portfolio-project{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-portfolio-project .item:not(:nth-child(3n + 3)){
+  margin-right: 30px;
+}
+
+.main-portfolio-project .item:nth-child(n + 4){
+  margin-top: 30px;
+}
+
+.main-portfolio-project .item:nth-child(-n + 3){
+  margin-top: 34px;
+}
+
+.main-portfolio-project .frame{
+  border-left: 1px solid var(--gray-border);
+  border-right: 1px solid var(--gray-border);
+  border-bottom: 1px solid var(--gray-border);
+  padding: 20px 24px;
+}
+
+.main-portfolio-project .project{
+  padding-top: 4px;
 }
