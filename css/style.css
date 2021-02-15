@@ -46,6 +46,14 @@ body {
   height: auto;
 }
 
+section:not(.main-hero) {/*все селекторы кроме Героя*/
+  padding-top: 94px;
+}
+
+section:last-child {/*последний селектор страницы*/
+  padding-bottom: 94px;
+}
+
 /*Logo*/
 
 .logo {
@@ -185,11 +193,6 @@ body {
   margin: 10px 0 0 0;
 }
 
-.main-accomplishments {
-  margin-top: 94px;
-  min-height: 101px;
-}
-
 .main-accomplishments-ul {
   display: flex;
   flex-wrap: wrap;
@@ -210,10 +213,6 @@ body {
   text-align: center;
 }
 
-.main-employment {
-  margin-top: 94px;
-}
-
 .main-employment-ul {
   display: flex;
   margin-top: 50px;
@@ -229,8 +228,6 @@ body {
 /*team*/
 .main-team {
   background-color: var(--bgr-wgray);
-
-  margin-top: 94px;
 }
 
 .main-team-ul .name,
@@ -252,11 +249,6 @@ body {
   margin-top: 10px;
   padding-bottom: 30px;
   text-align: center;
-}
-
-.main-team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .main-team-ul {
@@ -319,11 +311,6 @@ body {
 
 .main {
   background-color: var(--white-text);
-}
-
-.main-portfolio .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /*portfolio button*/
@@ -395,18 +382,6 @@ body {
   margin-right: var(--set-gap);
   margin-top: var(--set-gap);
 }
-
-/*.main-portfolio-project .item:not(:nth-child(3n + 3)){
-  margin-right: 30px;
-}
-
-.main-portfolio-project .item:nth-child(n + 4){
-  margin-top: 30px;
-}
-
-.main-portfolio-project .item:nth-child(-n + 3){
-  margin-top: 34px;
-}*/
 
 .main-portfolio-project .frame{
   border-left: 1px solid var(--gray-border);
